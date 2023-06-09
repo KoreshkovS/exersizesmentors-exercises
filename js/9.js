@@ -3,7 +3,7 @@
 // false; true
 
 const test = function (array, x) {
-  const letter = "a";
+  const letter = x;
   if (array[letter]) {
     return true;
   } else {
@@ -11,4 +11,4 @@ const test = function (array, x) {
   }
 };
 
-console.log(test({}, "a"));
+console.log(test({ a: 4 }, "a"));
